@@ -1,0 +1,27 @@
+{
+  "name": "signature",
+  "version": "1.0.1",
+  "description": "Signature by Controlla",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Controlla/Signature.git"
+  },
+  "keywords": [
+    "signature"
+  ],
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "figlet": "^1.2.1"
+  },
+  "author": "Ivan Sotelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Controlla/Signature/issues"
+  },
+  "homepage": "https://github.com/Controlla/Signature#readme"
+}
