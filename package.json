@@ -1,6 +1,6 @@
 {
   "name": "@controlla/signature",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Signature by Controlla",
   "main": "index.js",
   "scripts": {
