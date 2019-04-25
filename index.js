@@ -1,12 +1,12 @@
 const figlet = require('figlet')
 const chalk = require('chalk')
 
-const signature = version => {
-  title = chalk.cyan(
+module.exports = function (version) {
+  let text = chalk.cyan(
     figlet.textSync(`Controlla ${version}`, { horizontalLayout: 'full' }),
   )
 
+  text += ' By Iván Sotelo'
   console.log(text)
+  return true
 }
-
-export default signature
