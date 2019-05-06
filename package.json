@@ -1,6 +1,6 @@
 {
   "name": "@ivansotelo/signature",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Signature by Controlla",
   "main": "index.js",
   "scripts": {
