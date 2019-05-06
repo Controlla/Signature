@@ -22,6 +22,9 @@
   },
   "author": "Ivan Sotelo",
   "license": "ISC",
+  "controlla": {
+    "url": "https://github.com/Controlla/Signature"
+  },
   "bugs": {
     "url": "https://github.com/Controlla/Signature/issues"
   },
