@@ -7,8 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint  --fix \"*.js\"",
     "commitlint": "commitlint -e $GIT_PARAMS",
-    "release": "npm version patch && npm publish --access=public && git push",
+    "release": "standard-version && git push --follow-tags && npm publish",
     "postinstall": "controlla-postinstall || exit 0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,8 @@
     "figlet": "^1.2.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
     "eslint": "^5.4.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-ava": "^5.1.0",
@@ -30,9 +35,8 @@
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-standard": "^4.0.0",
-    "@commitlint/cli": "^7.0.0",
-    "@commitlint/config-conventional": "^7.0.1",
-    "husky": "^1.0.0-rc.13"
+    "husky": "^1.0.0-rc.13",
+    "standard-version": "^4.4.0"
   },
   "author": "Ivan Sotelo",
   "license": "ISC",
