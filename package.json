@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint  --fix \"*.js\"",
+    "commitlint": "commitlint -e $GIT_PARAMS",
     "release": "npm version patch && npm publish --access=public && git push",
     "postinstall": "controlla-postinstall || exit 0"
   },
@@ -28,13 +29,22 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.0",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "husky": "^1.0.0-rc.13"
   },
   "author": "Ivan Sotelo",
   "license": "ISC",
   "controlla": {
     "url": "https://github.com/Controlla/Signature",
     "logoUrl": "https://controlla.com.mx/logo.txt"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "npm run commitlint"
+    }
   },
   "bugs": {
     "url": "https://github.com/Controlla/Signature/issues"
