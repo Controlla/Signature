@@ -1,9 +1,10 @@
+/* eslint-disable no-console */
 const figlet = require('figlet')
 const chalk = require('chalk')
 
 module.exports = function (version) {
   let text = chalk.cyan(
-    figlet.textSync(`Controlla ${version}`, { horizontalLayout: 'full' }),
+    figlet.textSync(`Controlla ${version}`, { horizontalLayout: 'full' })
   )
 
   text += ' By Iván Sotelo'
