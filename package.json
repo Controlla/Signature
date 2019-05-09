@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "npm version patch && npm publish --access=public && git push",
-    "postinstall": "@controlla/postinstall || exit 0"
+    "postinstall": "controlla-postinstall || exit 0"
   },
   "repository": {
     "type": "git",
@@ -16,14 +16,15 @@
     "signature"
   ],
   "dependencies": {
-    "@controlla/postinstall": "^1.0.9",
+    "@controlla/controlla-postinstall": "^1.0.21",
     "chalk": "^2.4.2",
     "figlet": "^1.2.1"
   },
   "author": "Ivan Sotelo",
   "license": "ISC",
   "controlla": {
-    "url": "https://github.com/Controlla/Signature"
+    "url": "https://github.com/Controlla/Signature",
+    "logoUrl": "https://controlla.com.mx/logo.txt"
   },
   "bugs": {
     "url": "https://github.com/Controlla/Signature/issues"
